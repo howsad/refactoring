@@ -1,4 +1,4 @@
-package ru.sbt.refactoring;
+package ru.sbt.refactoring.tractor;
 
 import java.awt.*;
 
@@ -14,15 +14,15 @@ public enum Orientation {
             return EAST;
         }
     },
-    WEST {
+    EAST {
         @Override
         public Point moveForwards(Point currentPosition) {
-            return new Point(currentPosition.x - 1, currentPosition.y);
+            return new Point(currentPosition.x + 1, currentPosition.y);
         }
 
         @Override
         public Orientation turnClockwise() {
-            return NORTH;
+            return SOUTH;
         }
     },
     SOUTH {
@@ -36,15 +36,15 @@ public enum Orientation {
             return WEST;
         }
     },
-    EAST {
+    WEST {
         @Override
         public Point moveForwards(Point currentPosition) {
-            return new Point(currentPosition.x + 1, currentPosition.y);
+            return new Point(currentPosition.x - 1, currentPosition.y);
         }
 
         @Override
         public Orientation turnClockwise() {
-            return SOUTH;
+            return NORTH;
         }
     };
 

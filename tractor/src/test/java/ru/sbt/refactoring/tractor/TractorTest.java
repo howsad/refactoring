@@ -1,9 +1,9 @@
-package ru.sbt.refactoring;
+package ru.sbt.refactoring.tractor;
 
 import junit.framework.TestCase;
 
-import static ru.sbt.refactoring.Command.MOVE_FORWARDS;
-import static ru.sbt.refactoring.Command.TURN_CLOCKWISE;
+import static ru.sbt.refactoring.tractor.Command.MOVE_FORWARDS;
+import static ru.sbt.refactoring.tractor.Command.TURN_CLOCKWISE;
 
 /**
  * @author Ben

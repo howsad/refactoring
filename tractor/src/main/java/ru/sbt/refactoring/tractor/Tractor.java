@@ -1,8 +1,6 @@
-package ru.sbt.refactoring;
+package ru.sbt.refactoring.tractor;
 
 import java.awt.*;
-
-import static ru.sbt.refactoring.Orientation.*;
 
 public class Tractor {
     private Point position;
@@ -12,7 +10,7 @@ public class Tractor {
     public Tractor() {
         position = new Point(0, 0);
         field = new Point(5, 5);
-        orientation = NORTH;
+        orientation = Orientation.NORTH;
     }
 
     public Tractor(Point position, Point field, Orientation orientation) {

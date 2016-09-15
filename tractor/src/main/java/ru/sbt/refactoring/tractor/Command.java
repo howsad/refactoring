@@ -1,4 +1,4 @@
-package ru.sbt.refactoring;
+package ru.sbt.refactoring.tractor;
 
 /**
  * Created by Alexander Ushakov on 15.09.2016.
